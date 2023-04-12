@@ -12,7 +12,9 @@ public class LagrangeInterpolation {
         Call the function printLagrange() to see the results for a and b
          */
 //        printLagrange(x1,y1);
-        printLagrange(x2,y2);
+//        printLagrange(x2,y2);
+        //for exercise 5
+        printLagrange(x25(), y25());
 
     }
     public static double[] computeCoefficients(double[] x, double[] y){
@@ -68,5 +70,20 @@ public class LagrangeInterpolation {
                 System.out.print(" + ");
             }
         }
+    }
+    public static double[] x25(){
+        double[] x = new double[25];
+        for (int i = 0; i < 25; i++) {
+            x[i] = i + 1;
+//            y[i] = -x[i];
+        }
+        return x;
+    }
+    public static double[] y25(){
+        double[] y = new double[25];
+        for (int i = 0; i < 25; i++) {
+            y[i] = -(i + 1);
+        }
+        return y;
     }
 }
